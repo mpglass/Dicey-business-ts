@@ -1,6 +1,6 @@
 class Dice {
 
-    static genRoll: number = Math.floor((Math.random() * 6) + 1); 
+    // static genRoll: number = Math.floor((Math.random() * 6) + 1); 
     static collection: Dice[] = [];
 
   value: number;
@@ -8,7 +8,7 @@ class Dice {
   text: number;
 
   constructor() {
-    this.value = Dice.genRoll;
+    this.value = Math.floor((Math.random() * 6) + 1);
     this.div = $(`<div class="dice shadow">${this.value}</div>`);
     this.render();
     Dice.collection.push(this);

@@ -1,7 +1,7 @@
 var Dice = /** @class */ (function () {
     function Dice() {
         var _this = this;
-        this.value = Dice.genRoll;
+        this.value = Math.floor((Math.random() * 6) + 1);
         this.div = $("<div class=\"dice shadow\">" + this.value + "</div>");
         this.render();
         Dice.collection.push(this);
@@ -18,7 +18,7 @@ var Dice = /** @class */ (function () {
     Dice.prototype.render = function () {
         $("#dice-container").append(this.div);
     };
-    Dice.genRoll = Math.floor((Math.random() * 6) + 1);
+    // static genRoll: number = Math.floor((Math.random() * 6) + 1); 
     Dice.collection = [];
     return Dice;
 }());
