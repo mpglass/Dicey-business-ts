@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dicey Business in TS</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="nav justify-content-center p-3 shadow">
+      <button class="btn btn-outline-info mx-3" id="add-dice">Add Dice</button>
+      <button class="btn btn-outline-info mx-3" id="roll-dice">Roll All</button>
+      <button class="btn btn-outline-info mx-3" id="sum-dice">Sum All</button>
+    </nav>
+
+    <div class="mt-5 d-flex flex-wrap" id="dice-container"></div>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
